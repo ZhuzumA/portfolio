@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin, AiOutlineCodepen } from "react-icons/ai";
+import { IoIosSend } from "react-icons/io";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import deved from "../public/dev1.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -34,12 +35,12 @@ export default function Home() {
                 />
               </li>
               <li className="hover:scale-105">
-                <a
+                <button
+                  onClick={() => (window.location = "mailto:zhuzum@gmail.com")}
                   className="bg-gradient-to-r from-cyan-700 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
                 >
-                  Resume
-                </a>
+                  Contact Me
+                </button>
               </li>
             </ul>
           </nav>
@@ -51,8 +52,9 @@ export default function Home() {
               Frontend Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">
-              Front-end developer providing services fro programming and design
-              content needs. Join me down below and let's get cracking!
+              I love to create beautiful and performant digital products with
+              delightful user experiences. Join me down below and let's make
+              something special!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-500">
@@ -84,46 +86,56 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-3 dark:text-gray-200">Services I offer</h3>
+            <h3 className="text-3xl py-3 dark:text-gray-200">My, Myself & I</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              Since the beginning of my journey as a frontend developer, I have
-              done freelance photographer work for{" "}
-              <span className="text-teal-500">commertial</span> companies and
-              agencies
+              With an Engineering degree and my first working experience in the
+              Oil&Gas industry, almost {"5"} years ago, my husband and I decided
+              to move to Germany. After working as an Engineer and later in the
+              tertiary sector as a
+              <span className="text-teal-500"> Commertial</span> Photographer, I
+              decided to change my career. As an engineer and digital creator, I
+              wanted to combine both my skills, and I found it in Front-End
+              Development.  Always open to trying new things and optimistic
+              about new ideas.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              Since the beginning of my journey as a frontend developer, I have
-              done freelance photographer work for{" "}
-              <span className="text-teal-500">commertial</span> companies and
-              agencies
+              I am a <span className="text-teal-500">self - taught</span>{" "}
+              Front-End Developer. Definitely a team player, well-organised
+              person, problem solver with high attention to detail. Fan of
+              filming & video editing, outdoor activities, and electronic Music.
+              A family person and mother of two inquisitive children.
             </p>
           </div>
           <div className="lg:flex gap-10">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white">
+              <Image src={code} width={100} heigh={100} className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2">Problem Solver</h3>
+              <p className="py-2">
+                Creating successful responsive websites that are fast, ease to
+                use and built with best practices.
+              </p>
+              <h4 className="py-4 text-teal-600">Technologies I use</h4>
+              <p className="text-gray-800 py-1">JavaScript</p>
+              <p className="text-gray-800 py-1">React.js, Redux</p>
+              <p className="text-gray-800 py-1">
+                HTML/CSS, Sass or CSS frameworks such us Tailwind, Bootstrap
+              </p>
+            </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white">
               <Image src={design} width={100} heigh={100} className="mx-auto" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
               <p className="py-2">
-                Creating elegant design suited for your business
+                Creating elegant responsive design suited for your small
+                business
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustraitor</p>
+              <h4 className="py-4 text-teal-600">
+                Design tools and approaches
+              </h4>
               <p className="text-gray-800 py-1">Figma</p>
-            </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={code} width={100} heigh={100} className="mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">
-                Creating elegant design suited for your business
-              </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustraitor</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Responsive, Mobile First</p>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white">
               <Image
@@ -133,21 +145,23 @@ export default function Home() {
                 className="mx-auto"
               />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Software Testing
               </h3>
               <p className="py-2">
-                Creating elegant design suited for your business
+                Testing your digital products to improve quality
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustraitor</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h4 className="py-4 text-teal-600">Type of Testing I do</h4>
+              <p className="text-gray-800 py-1">Usability Testing</p>
+              <p className="text-gray-800 py-1">API with Postman</p>
+              <p className="text-gray-800 py-1">Functional</p>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-gray-200">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-gray-200">
+              Dive into my universe
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               Since the beginning of my journey as a frontend developer, I have
               done freelance photographer work for{" "}
