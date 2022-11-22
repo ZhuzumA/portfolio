@@ -37,9 +37,9 @@ export default function Home() {
               <li className="hover:scale-105">
                 <button
                   onClick={() => (window.location = "mailto:zhuzum@gmail.com")}
-                  className="bg-gradient-to-r from-cyan-700 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-700 to-teal-500 text-white px-4 py-2 rounded-md ml-8 flex justify-between gap-2"
                 >
-                  Contact Me
+                  <IoIosSend className="mt-1" /> Contact Me
                 </button>
               </li>
             </ul>
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-500">
             <a
-              className="hover:scale-105 cursor-pointer"
+              className="hover:scale-105 hover:text-teal-600 cursor-pointer"
               href="https://www.linkedin.com/in/zhuzum-ivanova-16403558/"
               target="_blank"
             >
@@ -67,13 +67,13 @@ export default function Home() {
             </a>
             <a
               href="https://github.com/ZhuzumA"
-              className="hover:scale-105 cursor-pointer"
+              className="hover:scale-105 hover:text-teal-600 cursor-pointer"
               target="_blank"
             >
               <AiFillGithub />
             </a>
             <a
-              className="hover:scale-105 cursor-pointer"
+              className="hover:scale-105 hover:text-teal-600 cursor-pointer"
               href="https://codepen.io/zhuzum"
               target="_blank"
             >
@@ -92,14 +92,14 @@ export default function Home() {
               Oil&Gas industry, almost {"5"} years ago, my husband and I decided
               to move to Germany. After working as an Engineer and later in the
               tertiary sector as a
-              <span className="text-teal-500"> Commertial</span> Photographer, I
+              <span className="text-teal-600"> Commertial</span> Photographer, I
               decided to change my career. As an engineer and digital creator, I
               wanted to combine both my skills, and I found it in Front-End
               Development.  Always open to trying new things and optimistic
               about new ideas.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              I am a <span className="text-teal-500">self - taught</span>{" "}
+              I am a <span className="text-teal-600">self - taught</span>{" "}
               Front-End Developer. Definitely a team player, well-organised
               person, problem solver with high attention to detail. Fan of
               filming & video editing, outdoor activities, and electronic Music.
@@ -107,7 +107,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 basis-1/3 dark:bg-white">
               <Image src={code} width={100} heigh={100} className="mx-auto" />
               <h3 className="text-lg font-medium pt-8 pb-2">Problem Solver</h3>
               <p className="py-2">
@@ -121,7 +121,7 @@ export default function Home() {
                 HTML/CSS, Sass or CSS frameworks such us Tailwind, Bootstrap
               </p>
             </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 basis-1/3 dark:bg-white">
               <Image src={design} width={100} heigh={100} className="mx-auto" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
@@ -137,7 +137,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Responsive, Mobile First</p>
             </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 basis-1/3 dark:bg-white">
               <Image
                 src={consulting}
                 width={100}
@@ -164,40 +164,56 @@ export default function Home() {
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               Since the beginning of my journey as a frontend developer, I have
-              done freelance photographer work for{" "}
-              <span className="text-teal-500">commertial</span> companies and
-              agencies
+              built some projects. Clock Application API, Landing Page
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web1}
-                width={"100%"}
-                height={"100%"}
-                className="rounded-lg object-cover"
-                layout="responsive"
-              />
+              <a
+                className="hover:scale-105 cursor-pointer"
+                target="_blank"
+                href="https://zhuzuma.github.io/ClockAppAPI/"
+              >
+                <Image
+                  src={web1}
+                  width={"100%"}
+                  height={"100%"}
+                  className="rounded-lg object-cover"
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                width={"100%"}
-                height={"100%"}
-                className="rounded-lg object-cover"
-                layout="responsive"
-              />
+              <a
+                className="hover:scale-105 cursor-pointer"
+                target="_blank"
+                href="https://zhuzuma.github.io/Mangato_Gallo/"
+              >
+                <Image
+                  src={web2}
+                  width={"100%"}
+                  height={"100%"}
+                  className="rounded-lg object-cover"
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                width={"100%"}
-                height={"100%"}
-                className="rounded-lg object-cover"
-                layout="responsive"
-              />
+              <a
+                className="hover:scale-105 cursor-pointer"
+                target="_blank"
+                href="https://zhuzuma.github.io/portfolio/"
+              >
+                <Image
+                  src={web3}
+                  width={"100%"}
+                  height={"100%"}
+                  className="rounded-lg object-cover"
+                  layout="responsive"
+                />
+              </a>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 items-stretch">
               <Image
                 src={web4}
                 width={"100%"}
