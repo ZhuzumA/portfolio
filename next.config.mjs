@@ -16,4 +16,9 @@ module.exports = nextConfig */
 	assetPrefix: './',
   };
   
-  export default   nextConfig;
+  // next.config.js
+const withImages = require('next-images')
+module.exports = withImages();
+
+
+  export default   nextConfig; 
